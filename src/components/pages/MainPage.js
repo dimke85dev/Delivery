@@ -23,10 +23,10 @@ function Main() {
   const fetchStore = async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get('http://localhost:2000/api/stores');
-      // const response = await axios.get(
-      //   'https://delivery-front-seven.vercel.app'
-      // );
+      // const response = await axios.get('http://localhost:2000/api/stores');
+      const response = await axios.get(
+        'https://delivery-back.vercel.app/api/stores'
+      );
 
       setStores(response.data);
       const firstStore = response.data.find(
@@ -43,6 +43,7 @@ function Main() {
   useEffect(() => {
     fetchStore();
   }, []);
+  if (!stores.length) return <Loader />;
 
   return (
     <div className="w-2/3 mx-auto">

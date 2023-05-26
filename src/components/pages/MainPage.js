@@ -23,7 +23,11 @@ function Main() {
   const fetchStore = async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get('http://localhost:2000/api/stores');
+      // const response = await axios.get('http://localhost:2000/api/stores');
+      const response = await axios.get(
+        'https://delivery-front-seven.vercel.app'
+      );
+
       setStores(response.data);
       const firstStore = response.data.find(
         (el) => el._id === '646f584110abc9519529585e'

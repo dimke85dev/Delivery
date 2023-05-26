@@ -1,0 +1,52 @@
+[
+  {
+    "store_name": "Store 1",
+    "products": [
+      { "name": "Bread", "price": 10 },
+      { "name": "Milk", "price": 20 },
+      { "name": "Eggs", "price": 15 },
+      { "name": "Apples", "price": 12 },
+      { "name": "Butter", "price": 30 }
+    ]
+  },
+  {
+    "store_name": "Store 2",
+    "products": [
+      { "name": "Potatoes", "price": 8 },
+      { "name": "Carrots", "price": 7 },
+      { "name": "Chicken", "price": 25 },
+      { "name": "Rice", "price": 18 },
+      { "name": "Sugar", "price": 16 }
+    ]
+  },
+  {
+    "store_name": "Store 3",
+    "products": [
+      { "name": "Salt", "price": 5 },
+      { "name": "Pepper", "price": 3 },
+      { "name": "Tomatoes", "price": 14 },
+      { "name": "Cucumbers", "price": 10 },
+      { "name": "Sausage", "price": 22 }
+    ]
+  },
+  {
+    "store_name": "Store 4",
+    "products": [
+      { "name": "Juice", "price": 8 },
+      { "name": "Tea", "price": 6 },
+      { "name": "Coffee", "price": 12 },
+      { "name": "Chocolate", "price": 15 },
+      { "name": "Ice Cream", "price": 10 }
+    ]
+  },
+  {
+    "store_name": "Store 5",
+    "products": [
+      { "name": "Cheese", "price": 9 },
+      { "name": "Pasta", "price": 4 },
+      { "name": "Juice", "price": 8 },
+      { "name": "Yogurt", "price": 6 },
+      { "name": "Salad", "price": 12 }
+    ]
+  }
+]

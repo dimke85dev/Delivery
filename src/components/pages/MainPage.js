@@ -1,10 +1,10 @@
 import Stores from '../../components/pages/Stors';
+import styles from './Main.module.css';
 
 import Loader from '../../components/UI/Loader';
-import axios, { AxiosError } from 'axios';
-import { Fragment, useEffect, useState } from 'react';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import Products from '../../components/product/products';
-import Header from '../../components/UI/Header';
 
 function Main() {
   const [stores, setStores] = useState([]);
@@ -50,14 +50,14 @@ function Main() {
   if (!stores.length) return <Loader />;
 
   const storeItems = stores.map((store) => (
-    <div key={store._id}>
+    <div className="mx-auto" key={store._id}>
       <Stores
         disabled={activeStors}
         onClick={showProductsHandler}
         id={store._id}
         showProducts={showProducts}
         stores={store}
-        className="px-4 py-1 tetx-sm border-solid border-2 hover:bg-slate-400 hover:text-white border-gray-600 rounded-xl shadow-lg shadow-blue-800/60 "
+        className="mx-auto px-4 py-1 tetx-sm border-solid border-2 hover:bg-slate-400 hover:text-white border-gray-600 rounded-xl shadow-lg shadow-blue-800/60 "
       />
     </div>
   ));
@@ -67,9 +67,14 @@ function Main() {
   ));
 
   return (
-    <div className="w-2/3 mx-auto">
-      <div className="mx-auto flex gap-4 p-5">
-        <div className="w-1/3 flex flex-col justify-between gap-6 p-5 border-solid border-2 border-gray-600 rounded-xl shadow-xl shadow-green-800/80 ">
+    <div className={' w-2/3 mx-auto  ' + styles.mobile}>
+      <div className={' mx-auto flex gap-4 p-5 ' + styles.mobile}>
+        <div
+          className={
+            'w-1/3 flex flex-col justify-between gap-6 p-5 border-solid border-2 border-gray-600 rounded-xl shadow-xl shadow-green-800/80 ' +
+            styles.mobile
+          }
+        >
           <div className="flex flex-col gap-7  ">{storeItems}</div>
           <button
             className="hover:bg-slate-400 hover:text-white px-2 py-1 mx-auto border-solid border-2 border-gray-600 rounded-xl shadow-lg shadow-gray-500/30 "
@@ -79,7 +84,12 @@ function Main() {
           </button>
         </div>
 
-        <div className="w-2/3 p-4 flex flex-col flex-wrap gap-5 border-solid border-2 border-gray-600 rounded-xl shadow-xl shadow-green-800/80 ">
+        <div
+          className={
+            'w-2/3 p-4 flex flex-col flex-wrap gap-5 border-solid border-2 border-gray-600 rounded-xl shadow-xl shadow-green-800/80 ' +
+            styles.mobile
+          }
+        >
           <div className="mx-auto text-2xl ">{storeName}</div>
           <div className="flex flex-wrap gap-5 p-4">
             {isLoading ? <Loader></Loader> : showProducts && productsItems}

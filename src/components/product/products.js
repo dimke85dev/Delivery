@@ -18,7 +18,7 @@ const Products = ({ product }) => {
   };
 
   return (
-    <form onSubmit={addToCartHandler}>
+    <form className="mx-auto" onSubmit={addToCartHandler}>
       <div
         key={id}
         data-id={id}

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import styles from '../pages/Main.module.css';
 import { Link } from 'react-router-dom';
 import CartContext from '../../store/cart-context';
 
@@ -13,7 +14,12 @@ const Header = () => {
 
   return (
     <div className=" bg-purple-400 py-5">
-      <div className="w-2/3 mx-auto flex justify-between px-6 items-center">
+      <div
+        className={
+          'w-2/3 mx-auto flex justify-between px-6 items-center ' +
+          styles.mobile
+        }
+      >
         <ul className="flex gap-5">
           <li className="text-xl  hover:text-yellow-400 cursor-pointer">
             <Link to={'/'}>Shops</Link>

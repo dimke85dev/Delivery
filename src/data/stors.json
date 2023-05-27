@@ -2,51 +2,201 @@
   {
     "store_name": "Store 1",
     "products": [
-      { "name": "Bread", "price": 10 },
-      { "name": "Milk", "price": 20 },
-      { "name": "Eggs", "price": 15 },
-      { "name": "Apples", "price": 12 },
-      { "name": "Butter", "price": 30 }
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365025b"
+        },
+        "name": "Bread",
+        "price": 10
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365025c"
+        },
+        "name": "Milk",
+        "price": 20
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365025d"
+        },
+        "name": "Eggs",
+        "price": 15
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365025e"
+        },
+        "name": "Apples",
+        "price": 12
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365025f"
+        },
+        "name": "Butter",
+        "price": 30
+      }
     ]
   },
   {
     "store_name": "Store 2",
     "products": [
-      { "name": "Potatoes", "price": 8 },
-      { "name": "Carrots", "price": 7 },
-      { "name": "Chicken", "price": 25 },
-      { "name": "Rice", "price": 18 },
-      { "name": "Sugar", "price": 16 }
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650260"
+        },
+        "name": "Potatoes",
+        "price": 8
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650261"
+        },
+        "name": "Carrots",
+        "price": 7
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650262"
+        },
+        "name": "Chicken",
+        "price": 25
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650263"
+        },
+        "name": "Rice",
+        "price": 18
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650264"
+        },
+        "name": "Sugar",
+        "price": 16
+      }
     ]
   },
   {
     "store_name": "Store 3",
     "products": [
-      { "name": "Salt", "price": 5 },
-      { "name": "Pepper", "price": 3 },
-      { "name": "Tomatoes", "price": 14 },
-      { "name": "Cucumbers", "price": 10 },
-      { "name": "Sausage", "price": 22 }
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650265"
+        },
+        "name": "Salt",
+        "price": 5
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650266"
+        },
+        "name": "Pepper",
+        "price": 3
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650267"
+        },
+        "name": "Tomatoes",
+        "price": 14
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650268"
+        },
+        "name": "Cucumbers",
+        "price": 10
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650269"
+        },
+        "name": "Sausage",
+        "price": 22
+      }
     ]
   },
   {
     "store_name": "Store 4",
     "products": [
-      { "name": "Juice", "price": 8 },
-      { "name": "Tea", "price": 6 },
-      { "name": "Coffee", "price": 12 },
-      { "name": "Chocolate", "price": 15 },
-      { "name": "Ice Cream", "price": 10 }
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365026a"
+        },
+        "name": "Juice",
+        "price": 8
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365026b"
+        },
+        "name": "Tea",
+        "price": 6
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365026c"
+        },
+        "name": "Coffee",
+        "price": 12
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365026d"
+        },
+        "name": "Chocolate",
+        "price": 15
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365026e"
+        },
+        "name": "Ice Cream",
+        "price": 10
+      }
     ]
   },
   {
     "store_name": "Store 5",
     "products": [
-      { "name": "Cheese", "price": 9 },
-      { "name": "Pasta", "price": 4 },
-      { "name": "Juice", "price": 8 },
-      { "name": "Yogurt", "price": 6 },
-      { "name": "Salad", "price": 12 }
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d3365026f"
+        },
+        "name": "Cheese",
+        "price": 9
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650270"
+        },
+        "name": "Pasta",
+        "price": 4
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650271"
+        },
+        "name": "Juice",
+        "price": 8
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650272"
+        },
+        "name": "Yogurt",
+        "price": 6
+      },
+      {
+        "_id": {
+          "$oid": "6470cb3341d0788d33650273"
+        },
+        "name": "Salad",
+        "price": 12
+      }
     ]
   }
 ]

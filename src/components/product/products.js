@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CartContext from '../../store/cart-context';
 
 const Products = ({ product }) => {
-  const addToCartHandler = () => {};
+  const id = product._id;
+  const { addItem, items } = useContext(CartContext);
+
+  const addToCartHandler = (e) => {
+    e.preventDefault();
+    addItem([
+      {
+        amount: 1,
+        name: product.name,
+        price: +product.price,
+        id: e.target.dataset.id,
+      },
+    ]);
+  };
+
   return (
-    <div className="">
+    <form onSubmit={addToCartHandler}>
       <div
-        key={Math.random()}
+        key={id}
+        data-id={id}
         className="flex flex-col gap-3 bg-white rounded-xl p-6 border-solid border border-gray-600 shadow-lg shadow-blue-800/40   "
       >
         <img
@@ -16,13 +32,14 @@ const Products = ({ product }) => {
         <div className="text-center">{product.name}</div>
         <div className="text-center">{product.price}.00 $</div>
         <button
+          data-id={id}
           onClick={addToCartHandler}
           className="hover:bg-red-300 hover:text-yellow-300 border-solid border px-3 py-1 border-gray-600 rounded-xl"
         >
           Add to Cart
         </button>
       </div>
-    </div>
+    </form>
   );
 };
 
